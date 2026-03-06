@@ -1,0 +1,13 @@
+/filex
+filex.exe
+*.exe
+*.out
+bin/
+build/
+go.work
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.tmp
