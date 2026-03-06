@@ -60,7 +60,7 @@ filex --help
 | / | Search files |
 | r | Rename file |
 | d | Delete file |
-| y | Copy |
+| c | Copy |
 | x | Cut |
 | v | Paste |
 | y | Clear clipboard |
