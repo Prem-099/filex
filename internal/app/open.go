@@ -13,7 +13,7 @@ func OpenFile(path string) error {
 	case "darwin":
 		cmd = exec.Command("open", path)
 	case "windows":
-		cmd = exec.Command("cmd","/c","start",path)
+		cmd = exec.Command("cmd","/c","start","",path)
 	default:
 		return nil
 	}

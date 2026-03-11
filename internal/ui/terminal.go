@@ -15,9 +15,10 @@ func (t *Terminal) Init() error {
 
 	state,err := term.MakeRaw(fd)
 	if err!=nil{
-		fmt.Println("Error: ",err)
+		return err
 	}
 	t.oldState = state
+	HideCursor()
 	return nil
 }
 
@@ -25,7 +26,12 @@ func (t *Terminal) Close(){
 	if t.oldState != nil{
 		term.Restore(int(os.Stdin.Fd()),t.oldState)
 		fmt.Print("\033[0m\n")
+		ShowCursor()
 	}
+}
+
+func ResetToTop() {
+	fmt.Print("\033[H")
 }
 
 func ClearScreen(){

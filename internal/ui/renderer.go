@@ -9,6 +9,7 @@ import (
 const (
 	ColorReset    = "\033[0m"
 	ColorSelected = "\033[42m\033[30m"
+	ClearLine = "\033[K"
 )
 
 func Render(path string, files []os.DirEntry, selected int, viewportStart int,

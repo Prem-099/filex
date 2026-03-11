@@ -90,10 +90,9 @@ GO 1.20 or later
 ## Note
 - Best when used in cmd in full screen
 
-## Current Issues
-- can not open files which have spaces in-between words of file name
-- no proper preview for binary files
-- continuously renders terminal 
+## Issues
+- no proper handling yet for binary files
+- redraws terminal for every operation
 
 ## Author
 
